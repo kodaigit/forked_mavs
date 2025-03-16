@@ -294,62 +294,64 @@ RgbPixel RgbCamera::RenderPixel(environment::Environment* env, glm::vec3 directi
 */
 
 void RgbCamera::ApplyElectronics(double dt) {
+    int nf = (int)(1.0f / (float)dt);
+    std::vector<float> pixel_values;
 
-	int nf = (int)(1.0f / (float)dt);
+    // Collect all pixel values
+        for (int i = 0; i < num_horizontal_pix_; i++) {
+            for (int j = 0; j < num_vertical_pix_; j++) {
+                for (int k = 0; k < 3; k++) {
+                    pixel_values.push_back(image_(i, j, k));
+                }
+            }
+        }
 
-	float mean = 0.0f;
+    float percentile_90 = 5.0f; // Default value if no pixels exist
+    if (!pixel_values.empty()) {
+        size_t index_90 = static_cast<size_t>(0.9 * pixel_values.size()); // 90th percentile index
+        std::nth_element(pixel_values.begin(), pixel_values.begin() + index_90, pixel_values.end());
+        percentile_90 = pixel_values[index_90];
+    }
 
-	if (frame_count_ > 5) {
-		for (int i = 0; i < num_horizontal_pix_; i++) {
-			for (int j = 0; j < num_vertical_pix_; j++) {
-				for (int k = 0; k < 3; k++) {
-					mean += image_(i, j, k);
-				}
-			}
-		}
-		mean = mean / (1.0f * num_horizontal_pix_ * num_vertical_pix_ * 3);
-	}
-	else {
-		mean = 5.0f;
-		frame_count_++;
-	}
+    // Clamp percentile value
+    if (percentile_90 > 255.0f || percentile_90 < 0.0f || isnan(percentile_90)) {
+        percentile_90 = 5.0f;
+    }
 
-	if (mean > 255.0f || mean < 0.0f || isnan(mean))mean = 5.0f;
+    std::cout << "Calculated 90th percentile: " << percentile_90 << std::endl;
 
-	//if (!isnan(mean)){
-	exposure_.push_back(mean);
-	//}
-	//else {
-	//	exposure_.push_back(150.0f);
-	//}
+    exposure_.push_back(percentile_90);
+    if (exposure_.size() > nf) exposure_.erase(exposure_.begin());
 
-	if (exposure_.size() > nf)exposure_.erase(exposure_.begin());
+    float avg = 0.0f;
+    if (!exposure_.empty()) {
+        for (float val : exposure_) {
+            avg += val;
+        }
+        avg = avg / (float)exposure_.size();
+    } else {
+        avg = 100.0f;
+    }
 
-	float avg = 0.0f;
-	if (exposure_.size() > 0) {
-		for (int i = 0; i < exposure_.size(); i++) {
-			avg += exposure_[i];
-		}
-		avg = avg / (float)exposure_.size();
-	}
-	else {
-		avg = 100.0f;
-	}
+    std::cout << "Calculated avg: " << avg << std::endl;
 
-	float mfac = target_brightness_ / avg;
+    // Brightness adjustment factor
+    float mfac = target_brightness_ / avg;
+    image_ = mfac * image_;
 
-	image_ = mfac * image_;
-
-	for (int i = 0; i < num_horizontal_pix_; i++) {
-		for (int j = 0; j < num_vertical_pix_; j++) {
-			for (int k = 0; k < 3; k++) {
-				if (image_(i, j, k) > 255.0f) image_(i, j, k) = 255.0f;
-				if (image_(i, j, k) < 0.0f) image_(i, j, k) = 0.0f;
-
-			}
-		}
-	}
+    // Clamping values to valid pixel range
+    for (int i = 0; i < num_horizontal_pix_; i++) {
+        for (int j = 0; j < num_vertical_pix_; j++) {
+            for (int k = 0; k < 3; k++) {
+                if (image_(i, j, k) > 255.0f) image_(i, j, k) = 255.0f;
+                if (image_(i, j, k) < 0.0f) image_(i, j, k) = 0.0f;
+            }
+        }
+    }
 }
+
+
+
 
 static glm::vec3 GetPixVal(int i, int j) {
 	glm::vec3 p(1.0f * i, 1.0f * j, 0.0f);

@@ -1,0 +1,75 @@
+
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl EU60trk3
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60trk3.bmp
+bump EU60trk3.bmp
+
+newmtl EU60lef4
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60lef4.bmp
+map_d EU60lef4.bmp
+
+newmtl EU60brk3
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60brk3.bmp
+bump EU60brk3.bmp
+
+newmtl EU60lef5
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60lef5.bmp
+map_d EU60lef5.bmp
+
+newmtl EU60twg1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60twg1.bmp
+bump EU60twg1.bmp
+
+newmtl EU60frt2
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60frt2.bmp
+bump EU60frt2.bmp
+
+newmtl EU60stk1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60stk1.bmp
+bump EU60stk1.bmp
+
+newmtl EU60sep1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60sep1.bmp
+bump EU60sep1.bmp
+
+newmtl EU60pst1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60pst1.bmp
+map_d EU60pst1.bmp
+
+newmtl EU60rts3
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU60rts3.bmp
+bump EU60rts3.bmp

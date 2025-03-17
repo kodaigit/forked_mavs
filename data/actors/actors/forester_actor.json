@@ -1,0 +1,19 @@
+{
+    "Actors": [
+     {
+	 "Mesh": "vehicles/forester/forester_vehicle_cg.obj",
+	 "Rotate Y to Z": false,
+	 "Rotate X to Y": false,
+	 "Rotate Y to X": false,
+	"Instances":[
+	  {
+	   "Initial Position":[15,0,22.0],
+	   "Offset":[-0.004, 0.0, -0.62],
+	   "Scale": [1.0,1.0,1.0],
+	   "Speed": 5.0,
+	   "Waypoints File": "waypoints/example_waypoints.json"
+     }
+    ]
+  }
+	]  
+}

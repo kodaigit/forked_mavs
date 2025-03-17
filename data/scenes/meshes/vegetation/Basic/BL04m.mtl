@@ -1,0 +1,26 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.9.1158
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Bark
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 1
+Kd spectral spectra/american_beech_bark.spec
+map_Kd BL04brk.bmp
+map_bump BL04brk_b.bmp
+
+newmtl Leaf
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 1
+Kd spectral spectra/american_beech_leaf.spec
+map_Kd BL04lef.bmp
+map_d BL04lef_a.bmp

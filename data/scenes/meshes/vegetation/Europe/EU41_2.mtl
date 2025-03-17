@@ -1,0 +1,64 @@
+
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl EU41trk1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41trk1.bmp
+bump EU41trk1.bmp
+
+newmtl EU41brk1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41brk1.bmp
+bump EU41brk1.bmp
+
+newmtl EU41twg2
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41twg2.bmp
+bump EU41twg2.bmp
+
+newmtl EU41lef2
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41lef2.bmp
+bump EU41lef2.bmp
+map_d EU41lef2.bmp
+
+newmtl EU41lef7
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41lef7.bmp
+bump EU41lef7.bmp
+map_d EU41lef7.bmp
+
+newmtl EU41ste1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41ste1.bmp
+bump EU41ste1.bmp
+
+newmtl EU41pst1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41pst1.bmp
+bump EU41pst1.bmp
+map_d EU41pst1.bmp
+
+newmtl EU41rts1
+Ns 1.0
+illum 2
+Kd 0.700000 0.700000 0.700000
+map_Kd EU41rts1.bmp
+bump EU41rts1.bmp

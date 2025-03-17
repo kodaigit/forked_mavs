@@ -1,0 +1,18 @@
+{
+    "Actors": [
+        {
+            "Mesh": "animations/background/background_distorted_noise_03.obj",
+            "Locked to Ground":false,
+            "Instances": [
+                {
+                    "Initial Position":[-29.3707, 173.68,0 ],
+                    "Waypoints File":"waypoints/background_waypoints.json",
+                    "Smooth Normals": true,
+                    "Offset":[ 0.0, 0.0, 0.0 ],
+                    "Scale":[1,1,1],
+                    "Speed":1
+                }
+            ]
+        }
+    ]
+}

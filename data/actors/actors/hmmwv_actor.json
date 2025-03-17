@@ -1,0 +1,20 @@
+{
+    "Actors": [
+        {
+            "Mesh": "vehicles/hmmwv/hmmwv_centered.obj",
+            "Rotate Y to Z": false,
+            "Rotate X to Y": false,
+            "Rotate Y to X": false,
+            "Locked to Ground": true,
+            "Instances": [
+                {
+                    "Initial Position": [ -45, -45, 0.0 ],
+                    "Offset": [ 0, 0, 0 ],
+                    "Scale": [ 1.0, 1.0, 1.0 ],
+                    "Speed": 5.0,
+                    "Waypoints File": "waypoints/circle_waypoints.json"
+                }
+            ]
+        }
+    ]
+}

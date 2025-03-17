@@ -1,0 +1,84 @@
+{ 
+    "Surface Mesh": [
+    {
+      "Mesh": "surfaces/aai_field_north_farm.obj",
+      "Rotate Y to Z": false,
+      "YawPitchRoll": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+    "Objects": [
+        {
+            "Mesh": "surfaces/aai_field_north_farm.obj",
+            "Instances":[
+                {
+
+                "YawPitchRoll": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "Scale": [
+                    1,
+                    1,
+                    1
+                  ]
+                }
+            ]
+          },
+        {
+            "Mesh": "vegetation/oak/oak.obj",
+            "Random": {
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+            "Number": 350,
+            "Polygon": [
+                    [
+                        182.19,
+                        48.457
+                    ],
+                    [
+                        -51.288,
+                        63.727
+                    ],
+                    [
+                        -42.868,
+                        86.986
+                    ],
+                    [
+                        195.26,
+                        78.912
+                    ]
+                ],
+                "Scale": [
+                    1,
+                    1
+                ]
+              }
+            }
+              
+          ]
+
+        }
+          

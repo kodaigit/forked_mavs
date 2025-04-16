@@ -1,7 +1,7 @@
 { 
     "Surface Mesh": [
     {
-      "Mesh": "surfaces/aai_field_north_farm.obj",
+      "Mesh": "surfaces/aai_field_xyz_correct.obj",
       "Rotate Y to Z": false,
       "YawPitchRoll": [
         0.0,
@@ -22,7 +22,7 @@
   ],
     "Objects": [
         {
-            "Mesh": "surfaces/aai_field_north_farm.obj",
+            "Mesh": "surfaces/aai_field_xyz_correct.obj",
             "Instances":[
                 {
 
@@ -54,22 +54,22 @@
                 ],
             "Number": 350,
             "Polygon": [
-                    [
-                        182.19,
-                        48.457
-                    ],
-                    [
-                        -51.288,
-                        63.727
-                    ],
-                    [
-                        -42.868,
-                        86.986
-                    ],
-                    [
-                        195.26,
-                        78.912
-                    ]
+              [
+                -78.912,
+                195.26
+            ],
+            [
+                -86.986,
+                -42.868
+            ],
+            [
+                -71.864,
+                -52.667
+            ],
+            [
+                -42.392,
+                181.77
+            ]
                 ],
                 "Scale": [
                     1,

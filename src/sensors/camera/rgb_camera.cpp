@@ -335,9 +335,11 @@ void RgbCamera::ApplyElectronics(double dt) {
 
     std::cout << "Calculated avg: " << avg << std::endl;
 
+
     // Brightness adjustment factor
     float mfac = target_brightness_ / avg;
     image_ = mfac * image_;
+
 
     // Clamping values to valid pixel range
     for (int i = 0; i < num_horizontal_pix_; i++) {

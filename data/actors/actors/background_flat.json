@@ -1,7 +1,7 @@
 {
     "Actors": [
         {
-            "Mesh": "animations/background/background.obj",
+            "Mesh": "animations/background/original_background.obj",
             "Locked to Ground":false,
             "Instances": [
                 {

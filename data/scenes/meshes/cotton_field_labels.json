@@ -1,0 +1,37 @@
+{
+    "Label Colors": [
+      {
+        "Label": "cotton_boll",
+        "Color": [ 1,1,1],
+        "Label Number": 0
+      },
+      {
+        "Label": "remaining_plant",
+        "Color": [ 0, 1, 0 ],
+        "Label Number": 1
+      },
+      {
+        "Label": "ground",
+        "Color": [ 0, 0, 1 ],
+        "Label Number": 2
+      },
+      {
+        "Label": "tree",
+        "Color": [ 0.5, 0.5, 0.5 ],
+        "Label Number": 3
+      },
+      {
+        "Label": "background",
+        "Color": [ 0.2, 0.2, 0.2 ],
+        "Label Number": 4
+      }
+    ],
+  
+  "Labels": [
+      ["Cotton_Boll_Part", "cotton_boll" ],
+      ["Cotton_Remaining", "remaining_plant"],
+      ["animations/background/original_background.obj","background"],
+      ["animations/background/background_distorted_noise_02.obj","background"],
+      ["animations/background/background_distorted_noise_03.obj","background"]
+      ]
+  }

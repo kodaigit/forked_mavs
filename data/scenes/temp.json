@@ -1,0 +1,72 @@
+{
+    "Object Labels": "my_cotton_labels.json",
+    "Surface Mesh": [
+        {
+            "Mesh": "surfaces/aai_field_xyz_correct.obj",
+            "Rotate Y to Z": false,
+            "YawPitchRoll": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Scale": [
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "Objects": [
+        {
+            "Mesh": "surfaces/aai_field_xyz_correct.obj",
+            "Instances": [
+                {
+                    "YawPitchRoll": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Mesh": "temp/plant_25_grouped.obj",
+            "Label By Group": true,
+            "Instances": [
+                    {
+                        "YawPitchRoll": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Position": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Scale": [
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                ]
+        }  
+]
+}
+

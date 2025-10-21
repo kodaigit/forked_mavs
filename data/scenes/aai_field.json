@@ -1,4 +1,5 @@
 { 
+    "Object Labels": "cotton_field_labels.json",
     "Surface Mesh": [
     {
       "Mesh": "surfaces/aai_field_xyz_correct.obj",

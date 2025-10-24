@@ -1,0 +1,116 @@
+{
+    "Object Labels": "cotton_field_labels.json",
+    "Surface Mesh": [
+        {
+            "Mesh": "surfaces/aai_field_xyz_correct.obj",
+            "Rotate Y to Z": false,
+            "YawPitchRoll": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Scale": [
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "Objects": [
+        {
+            "Mesh": "surfaces/aai_field_xyz_correct.obj",
+            "Instances": [
+                {
+                    "YawPitchRoll": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Mesh": "vegetation/oak/oak.obj",
+            "Random": {
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Number": 350,
+                "Polygon": [
+                    [
+                        -78.912,
+                        195.26
+                    ],
+                    [
+                        -86.986,
+                        -42.868
+                    ],
+                    [
+                        -71.864,
+                        -52.667
+                    ],
+                    [
+                        -42.392,
+                        181.77
+                    ]
+                ],
+                "Scale": [
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "Mesh": "cotton_grouped\\plant_31\\plant_31_grouped.obj",
+            "Smooth Normals": false,
+            "Label By Group": true,
+            "Rotate Y to Z": false,
+            "Scale":[
+                0.3,
+                0.3,
+                0.3
+            ],
+            "Random": {
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Number": 350,
+                "Polygon": [
+                    [
+                        20,
+                        20
+                    ],
+                    [
+                        20,
+                        -20
+                    ],
+                    [
+                        -20,
+                        20
+                    ],
+                    [
+                        -20,
+                        -20
+                    ]
+                ]
+            
+            }}]}
